@@ -25,7 +25,7 @@ exports.testmail = functions.https.onRequest((request, response) => {
     console.log(dept);
 
     var jwt = getJwt();
-    var apiKey = "AIzaSyC3gXrA8gXr2bylT2knVVZRc-0BvKvlvD4";
+    var apiKey = "";//Not Disclosed
 
     var ssheetId;
 
@@ -75,16 +75,7 @@ exports.testmail = functions.https.onRequest((request, response) => {
 
 function getJwt() {
     var credentials = {
-        "type": "service_account",
-        "project_id": "carbon-crossing-256318",
-        "private_key_id": "0ebfa25935f6e41c1368f7489c2b29d3368b8145",
-        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQhSTT4sd7sBEh\nBBW31HtR36c8Bb/NTpEVs7gp7hxQ2pLD8qAMD/MstWEhisQqQiXMcg4QTj+WDzwn\n2QQUzUM/AG+rTVp0bfPqTFoKTFg9jmZO4HLVg9P8g+UtKT0ZZCduxsfynp7RTUor\nUZseiKI0xpZAYV29XgOmITwlTQVqgMPRTocB+LmEJ06c7Ub7INMO/Tg3z8AnX8xG\nKA26OT0MpPN2Jb+rKnRHbkQMnYJZmc9PCCeC2DzGkAveXwetuEehfQ6D/j8Ual8E\ng/MM+QVcTHfZ2hiMI29wsZYO9+BcnPPkzc1Iy3YJGOKa1KTcJDxrlx9EMobP0URu\nsVGbv6ELAgMBAAECggEAEPFQjbrWdJFYwvL/BMHKB1wBzZm1/OuOVFIW+6kyOcuY\nsz0qjfBZ1N8j9kK9L6XSRmtaAy8ocXvpal9yunH3Lc5ORH/zgpRQhlAP3NhZLx87\n5trL2ddtSQ46d9Hq+f4uSgzywB7tTppWFXD7Bp8ZdupP2QlQQYu7BiubJHi+oOmR\n7bRyeSkMNOk8zKPlhAOuZycHoafx79DEJPHjTI1fPXLfFNgW/kPrXJ7jHag79D2g\n7UswWa/f3lzAiS/mM89dDNc+7gQIRnAS0dGTFkVTSVD2ANeKTdIuR0HMtUsuLi+K\nWWRmLZkSiO5F5vWXl6CBxnrsGGIu6HE6ra+6YuRU+QKBgQDvbfrBI8Acf/mNmRnm\naQp6BwuaJrAwSJIZ+5SLAUfqx1pWvTcyXcGi8mOaPdckIMPRTWHMYaTGY+pEs+44\nCLf/jXi28elkiC65wE+BwNprPhNyMvhJyibOBtpJTFgD/48+nMCE7cUogZh28Xm/\njTwdQEilLMDAg9kqTbE2TjbCVQKBgQDe84jW24D/MAzJ0Y3ByGcYCp1/EtOG1/25\ntXIWMhuW4eoyM5x+3N6q8TnKItdnxCEsc2PWTdoctr/KoU88Z4itaSTNxldHjz61\nwulzLgEziwE9VRSFFt07kb1XSMJnbV1LeKr9W8gipWnhoG/5ZKHEvZDK/L/VppWK\n0i+NpM313wKBgBmXes78IEOrliQBclhDcAA9EotmiTyP9TXbwzPcbjB1IH3W+bhj\ndxgQqn7JD17oNaYAjGyJH1CpS1gOl27b17b0CywazWSWfdAS8yyeTXpbBz8UnZ9d\ngSpSZzCgfWPoBAqgPJ+4vnMm7wH/q5DC6uMBhQJKt0ucjDDOXxu73nSFAoGBALbY\nm/06AE1JJvPNfKjUplg9PHWfBwOr2FaZzHsPlTjlBqEtWsdgdO1U8MQqVuavH1XJ\nPLPhHWQ3LIwOR2GOt7UgaiKo66OwgwmmVLc1n56Z/eZDBJUx7zaPi+0tquIP+1eO\nGw22XCit6Gw2nB64vUMRBNK0/s9F05cKUh2kb5WZAoGARpcQenvPmeKOwKy0XsVG\n2sakRJLlSSw2vYL8RVf/LjUoPQGUJdvRSG2y8mpRjGN5vLmTdnk4o9HmPshpiWsZ\nRzfeg104FMBoXYqiQmAbx3uTlNaYEXFAme0pGLgZ6IHZdfHC9N8eXmsxFXNW6+k3\nH4dY2ae7u++yFsxTBiK3P5w=\n-----END PRIVATE KEY-----\n",
-        "client_email": "spreadsheet-writer@carbon-crossing-256318.iam.gserviceaccount.com",
-        "client_id": "117890137626360767559",
-        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-        "token_uri": "https://oauth2.googleapis.com/token",
-        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet-writer%40carbon-crossing-256318.iam.gserviceaccount.com"
+        //Not Disclosed
     };
     console.log(credentials.client_email);
     return new google.auth.JWT(
