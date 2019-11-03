@@ -90,7 +90,7 @@ function sendEmail(recipient, title, message, newsheet, branch, fileurls) {
         service: 'gmail',
         auth: {
             user: 'gcettpcmailer',
-            pass: 'gcet123@abc'
+            pass: ''
         }
     });
 
@@ -279,7 +279,7 @@ function sendConfirmationMail(id, recipient) {
         service: 'gmail',
         auth: {
             user: 'gcettpcmailer',
-            pass: 'gcet123@abc'
+            pass: ''
         }
     });
 
@@ -319,7 +319,7 @@ exports.infomail = functions.https.onRequest((request, response) => {
     const sheets = google.sheets({ version: 'v4' });
 
     var jwt = getJwt();
-    var apiKey = "AIzaSyC3gXrA8gXr2bylT2knVVZRc-0BvKvlvD4";
+    var apiKey = "";
 
     sheets.spreadsheets.values.get({
         spreadsheetId: msgsheet,
@@ -353,7 +353,7 @@ function sendInfoMail(email, title, msg, fileurls) {
         service: 'gmail',
         auth: {
             user: 'gcettpcmailer',
-            pass: 'gcet123@abc'
+            pass: ''
         }
     });
 
